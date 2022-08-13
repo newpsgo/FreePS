@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.psgo.tk/psgo.ico" type="image/x-icon">
+  <title>PSGO折腾导航 - 小改版新出发</title> 
+  <style>
+    
+	body{
+	overflow: hidden;
+    background-color:#080808;
+    background-attachment:fixed;
+    background-size:100%;
+	background-repeat:no-repeat;
+    font-family:system-ui;
+	text-align:center
+    }
+    
+	a:hover{
+	text-decoration: none;
+    border-bottom: 1.5px solid;
+	padding-bottom: 18px;
+	}
+    
+	button:-moz-focus-inner, button:focus{
+    outline:0;
+    border:none
+	}
+	
+	option{
+    background-color:#080808;
+    }
+	
+    button{
+    font-family:arial;
+    font-size:22px;
+    font-weight:700;
+    border:2px solid #404040;
+    border-radius:4px;
+	margin:10px 2px; 
+    padding:10px;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:none;
+    background:#CFB53B;
+    box-shadow:0 5px 0 #888888;
+    } 
+
+    button:hover{
+    color: #CFB53B;
+    font-size:22px;
+    background:#161616;
+    border:2px solid #fff;
+    box-shadow:0 5px 0 #ccc;
+    } 
+    
+    button:active{
+    background:#CFB53B;
+    position:relative;
+    color:#000;
+    top:5px;
+    box-shadow:none
+    }
+    
+   .bottopmsg{
+	position:absolute;
+	bottom:20px;
+    width:99%;
+	padding:5px 0 1px 0;
+	color:#CFB53B;
+	text-align: center;
+	font-size:16px;
+    }
+	
+      /** variables */
+      :root {
+        /*orig*/
+
+        --color-black: black;
+        --color-cod-gray: #101010;
+        --color-white: white;
+        --color-error: rgb(191, 95, 95);
+        --color-primary-rgba: 0, 192, 251;
+        --color-primary: #00c0fb;
+        --color-secondary-rgba: 234, 182, 56;
+        --color-secondary: #eab638;
+      }
+
+      .tiles {
+        display: flex;
+        flex-direction: column;
+		z-index:-1;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
+      }
+      .tiles__line {
+        -webkit-animation: runner 20s linear infinite;
+        display: flex;
+        transform: translateX(25%);
+      }
+      .tiles__line:nth-child(2) {
+        -webkit-animation-duration: 32s;
+      }
+      .tiles__line:nth-child(3) {
+        -webkit-animation-duration: 44s;
+      }
+
+      @keyframes runner {
+        to {
+          -webkit-transform: translateX(-25%);
+        }
+      }
+      .tiles__line-img {
+        --tile-margin: 3vw;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        flex: none;
+        height: 30vh;
+        margin: var(--tile-margin);
+        width: 30vh;
+        background-color:#CFB53B;
+        opacity: 0.3;
+
+      }
+      .tiles__line-img--large {
+        border-radius: 20vh;
+        width: 100vh;
+        opacity: 0.3;
+      }
+  
+</style> 
+ </head> 
+ <body> 
+  <br> 
+  <h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#CFB53B">PSGO.TK  折腾导航</font></h1> 
+  <div id="mymenu"> 
+  <div id="progress" style="font-size:30px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">小改版 <font color="#CFB53B"> 新出发</font></div> 
+  <br> 
+  <table align="center"> 
+<tr><td align="center">
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/474/index.html'";><font color="">  4.74 v1.4 </font></button>
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/505/index.html'";><font color=""> 5.05 v3 </font></button>
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/672V10/index.html'";><font color=""> 6.72 v10 </font></button>
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/672/index.html'";><font color=""> 6.72 Phive </font></button>
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像 / 7.X建议升级9.00'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/702P/index.html'";><font color=""> 7.02 </font></button>
+<button type="button" onmouseover="progress.innerHTML='PSGO 原版镜像 / 7.X建议升级9.00'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='psgo/755P/index.html'";><font color=""> 7.5X </font></button>
+<button type="button" onmouseover="progress.innerHTML='7.16新增 GoldHEN V2.3b2'"; onmouseout="progress.innerHTML='小改版 新出发'" onclick="window.location.href='psgo/9v10/index.html'";><font color=""> 9.00 v10 </font></button>
+</td></tr>
+
+<tr><td align="center" >
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持505 & 672 & 702 & 75X & 900 / 版本最全 / 用户量最多'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='https://karo.psgo.tk'";><font color=""> Karo </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持672 & 702 & 75X & 900'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='https://gamerhack.psgo.tk'";><font color=""> GamerHack </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持505 & 672 & 702 & 900'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='https://wolf.psgo.tk'";><font color=""> TheWolf </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持505 & 507 & 672 & 900 / 移植Leeful方案 / 无插件'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='prb/index.html'";><font color=""> Prb 极简 </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持505 & 507 & 672 & 900 / GoldHEN v2.3b2 / 无插件'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='prb2.3b2/index.html'";><font color=""> GoldHEN v2.3 尝鲜 </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持672 & 702 & 75X & 900'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='https://dm.psgo.tk'";><font color=""> DM </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 支持505 & 672'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='wr0zen/index.html'";><font color=""> wr0zen </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 由Kameleon移植编译 / 不含插件 / 稳定性不错'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='leeful900/index.html'"><font color=""> Leeful 9.00 稳定 </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 更新快 / 善于移植优质方案'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='kameleon/index.html'"><font color=""> Kameleon 9.00 </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 经典方案 / 新增GoldHEN V2.2.2'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='macedo900full/index.html'"><font color=""> Macedo 9.00 </font></button>
+<button type="button" onmouseover="progress.innerHTML='国内镜像 / 由Kameleon移植编译 / 不含插件 / 单文件新技术'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='stooged900/index.html'"><font color=""> Stooged 9.00 </font></button>
+<button type="button" onmouseover="progress.innerHTML='常用工具 / 不定期更新'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.open('https://pan.baidu.com/s/1YujeyrT26tYzFxJJpSFMcA?pwd=hmhy')";><font color=""> 工具包 </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button"  onmouseover="progress.innerHTML='集合众多作者原版原链接地址 / 更新更及时 '"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.location.href='https://aio.psgo.tk'"; style="width:360px;"><font color=""> All in One 原版原链接折腾导航 </font> </button>
+<button type="button"  onmouseover="progress.innerHTML='集合众多固件 / 支持Windows和macOS系统 / 兼容多种开发板'"; onmouseout="progress.innerHTML='小改版 新出发'"; onclick="window.open('https://esp.psgo.tk')"; style="width:360px;"><font color=""> ESP8266 / ESP32 在线刷机工具 </font> </button>
+
+</td></tr>
+   </table> 
+  </div> 
+  <div class="bottopmsg"> 
+   <a href="https://www.psgo.tk/thanks.html" target="_blank" style="text-decoration:none;"><h1 style="font-size:23px;text-align:center;"><font color="#ffffff">你的喜欢与分享 <font color="#CFB53B"> 是我更新的动力</font> </font></h1></a>
+   <a href="https://www.psgo.tk/faqpsgo.html" target="_blank" style="color:#CFB53B;font-size:16px;text-align:center;text-decoration:none;">常见问题</a> &nbsp;·&nbsp; 
+   <a href="https://game.psgo.tk/index.html" target="_blank" style="color:#CFB53B;font-size:16px;text-align:center;text-decoration:none;">资源导航</a> &nbsp;·&nbsp; 
+   <a href="https://www.psgo.tk/base64.html" target="_blank" style="color:#CFB53B;font-size:16px;text-align:center;text-decoration:none;"> 解密神器 </a> &nbsp;·&nbsp; 
+   <a href="https://www.psgo.tk/disclaimer.html" target="_blank" style="color:#CFB53B;font-size:16px;text-align:center;text-decoration:none;">免责声明</a>
+  </div> 
+  <div class="tiles"> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+   </div>  
+  </div>
+ </body>
+</html>
