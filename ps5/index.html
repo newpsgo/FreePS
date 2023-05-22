@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>PS5 4.03 Kernel Exploit</title>
+    <title>PS5 4.03 Kernel Exploit - psgo.tk</title>
     <link rel="shortcut icon" href="favicon.ico"></link>
 </head>   
 <body>
@@ -43,23 +43,16 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
         <a href="#" onclick="changeLanguage('russian'); return false">Русский</a>
     </p>
     <div id="english" class="language" style="display: block">
-        <h3>READ THIS CAREFULLY BEFORE PROCEEDING</h3>
-        <p><b>This exploit loads payloads in PLD (.bin) format on PS5 firmware 4.03. Other firmwares and payload formats are NOT supported.</b></p>
+        <h3>继续前请仔细阅读</h3>
+        <p><b>此漏洞利用在 PS5 固件 4.03 上加载 PLD (.bin) 格式的有效载荷。不支持其他固件和负载格式。</b></p>
         <ol>
-            <li>Click on the link that says JB+NETCAT. In about 20 seconds you'll get a popup saying
-                "waiting for payloads". This means that everything has gone well.
-                You can then send your payload to TCP port 9019.<br />
-                If something went wrong during the process, you may get an alert saying "Jailbreak failed! Reboot your
-                PS5 and try again.". In this case you must reboot your PS5, preferrably without closing the dialog
-                box.<br />
-                If the system hangs for more than a minute (may require more time on slow Internet connections), reboot
-                your PS5 and try again.<br />
-                If the system crashes (looks like instant powerdown), press the power button on the PS5 (NOT on the
-                gamepad) until it turns on again, then retry.
+            <li>单击显示为 JB+NETCAT 的链接。大约 20 秒后，您会看到一个弹出窗口，上面写着“等待有效负载”。这意味着一切顺利。然后你可以将你的有效负载发送到 TCP 端口 9019。<br />
+               如果在此过程中出现问题，你可能会收到一条警告说“越狱失败！重新启动你的 PS5 并重试。”。在这种情况下，您必须重新启动 PS5，最好不要关闭对话框。<br />
+                如果系统挂起超过一分钟（在慢速互联网连接上可能需要更多时间），请重新启动您的 PS5 并重试。<br />
+                如果系统崩溃（看起来像立即断电），请按下 PS5 上的电源按钮（不是游戏手柄上的）直到它再次打开，然后重试。
             </li>
         </ol>
-        <p><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
-                jailbreak.</i></p>
+        <p><i>此漏洞确实会崩溃并挂起。有时您甚至需要重试 10 次才能越狱。</i></p>
         <p><i>Credits: @theflow for vulnerability disclosure, @ChendoChap for userland CFI bypass, @SpecterDev & @ChendoChap for various help</i></p>
     </div>
     <div id="russian" class="language" style="display: none">
