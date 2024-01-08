@@ -20,8 +20,8 @@
 </div>	
 
 <div id=BOX2 class=BOX>
-<div id=rteSTAT class=STATBOX1>WebRTE Payload: Checking...</div>
-<div id=gameSTAT class=STATBOX2>Running Game ID: Checking...</div>
+<div id=rteSTAT class=STATBOX1>WebRTE插件: 正在检测...</div>
+<div id=gameSTAT class=STATBOX2>运行中的游戏ID: 正在检测...</div>
 <div id=totalSTAT class=STATBOX3>金手指数量: <span id=tot1></span>个</div>
 
 <div id=infobutz>
@@ -31,14 +31,14 @@
 </div>
 
 <div id=showbutz>
-<button class="leeful smaller" id=Sall onclick="$.get(listUrl,ShowALL)">Show ALL</button><br>
-<button class="leeful smaller" id=Snew onclick='$.get(listUrl,SortNEW)'>Sort: NEW</button>
+<button class="leeful smaller" id=Sall onclick="$.get(listUrl,ShowALL)">显示所有</button><br>
+<button class="leeful smaller" id=Snew onclick='$.get(listUrl,SortNEW)'>按最新排序</button>
 </div>
 
 <div id=sortbutz>
-<button class="leeful smaller" onclick='$.get(listUrl,SortCUSA)' id=Scusa> Sort: CUSA </button><br>
-<button class="leeful smaller" onclick='$.get(listUrl,SortZA)' id=Sza> Sort: Z > A</button>
-<button class="leeful smaller" onclick='$.get(listUrl,SortAZ)' id=Saz> Sort: A > Z</button>
+<button class="leeful smaller" onclick='$.get(listUrl,SortCUSA)' id=Scusa> 按分类排序 </button><br>
+<button class="leeful smaller" onclick='$.get(listUrl,SortZA)' id=Sza> 从 Z 到 A</button>
+<button class="leeful smaller" onclick='$.get(listUrl,SortAZ)' id=Saz> 从 A 到 Z</button>
 </div>
 </div>
 
@@ -50,15 +50,15 @@
 <button type="button" class="btn btn-danger2" onclick='$("#instructions-dialog").modal("hide");enableNAV();' data-dismiss="modal">Close</button>
 </div>
 <div class="modal-body">
-1: Load HEN, GoldHEN or MIRA from the host menu of your choice.<br><br>
-2: Load the WebRTE(PS4Trainer) payload from the host menu of your choice.<br><br>
-3: Launch a game on the PS4 then open the Offline Trainer Menu.<br><br>
-4: If any trainers are available for your game they will automatically be shown when you open the trainer menu.<br><br>
-5: Click the trainer that matches the update version of your game and toggle the various cheat options ON or OFF.<br><br>
-• TIP!&nbsp; To find the update version of your game: Highlight the game on the PS4 main menu, press the options<br>
-&nbsp;&nbsp;button and select 'Information'.<br><br>
-• IMPORTANT!&nbsp; If you usually run your PS4 totally offline, make sure to run the WebRTE payload 'AFTER' you are<br>
-&nbsp;&nbsp;disconnected from the internet. e.g Do Not run the WebRTE payload and then disconnect from the internet!
+1: 从您选择的主机菜单加载GoldHEN、HEN 或 MIRA。<br><br>
+2: 从您选择的主机菜单加载WebRTE网页金手指（PS4Trainer）插件。<br><br>
+3：在 PS4 上启动游戏，然后打开本页（首次需要进行离线缓存）。<br><br>
+4：如果您的游戏有可用的金手指，当您打开本页时，它们会自动显示。<br><br>
+5: 选择与您的游戏ID和版本相匹配的金手指，然后打开或关闭各种作弊选项。<br><br>
+<!-- • TIP!&nbsp; To find the update version of your game: Highlight the game on the PS4 main menu, press the options<br> -->
+<!-- &nbsp;&nbsp;button and select 'Information'.<br><br> -->
+<!-- • IMPORTANT!&nbsp; If you usually run your PS4 totally offline, make sure to run the WebRTE payload 'AFTER' you are<br> -->
+<!-- &nbsp;&nbsp;disconnected from the internet. e.g Do Not run the WebRTE payload and then disconnect from the internet! -->
 </div></div></div></div>
 
 <div class="modal fade" id="tips-dialog">
@@ -131,15 +131,15 @@
 <div id="mods"></div>
 </div>
 <div class="modal-footer">
-<div class="mr-auto">Status : <span id="Message" class="statmsg"></span></div>
-<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="document.body.style.overflow='auto';">Close</button>
+<div class="mr-auto">状态 : <span id="Message" class="statmsg"></span></div>
+<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="document.body.style.overflow='auto';">关闭</button>
 </div></div></div></div>
 <script>
 function ShowLDR(){LDR.className='ShowLDR';document.body.style.overflow='hidden';}
 function HideLDR(){LDR.className='HideLDR';}
 function WebRTEchecker(){
-if(sessionStorage.WebRTE!="no")rteSTAT.innerHTML="WebRTE Payload: Loaded";
-else rteSTAT.innerHTML="WebRTE Payload: <font color=#dc3545>Not Loaded";
+if(sessionStorage.WebRTE!="no")rteSTAT.innerHTML="WebRTE插件: 已加载";
+else rteSTAT.innerHTML="WebRTE插件: <font color=#dc3545>未加载";
 }
 function disableNAV(){
 var x=document.querySelectorAll('div[tabindex="0"], span[tabindex="0"]');var i;for(i=0;i<x.length;i++){x[i].setAttribute("tabIndex","");}
