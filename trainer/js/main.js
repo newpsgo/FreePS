@@ -247,7 +247,7 @@ var good = true;
     }
     if(good) {
 		if (MatchingGame=="yes"){
-        $("#Message").text("已激活！请选择金手指");
+        $("#Message").text("已激活！请选择作弊项");
         //PS4.Notify(222, "Trainer Attached Successfully \nSelect Any Cheats You Require");
 		}
     }

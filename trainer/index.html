@@ -23,7 +23,7 @@ rawFile.send(null);
 readTextFile("list.json", function(text){
 var data = JSON.parse(text);
 localStorage.TrainerDate=data.TrainersUpdatedOn;
-document.title="Leeful Offline PS4 Trainer [Trainers Updated: "+localStorage.TrainerDate+"]";
+document.title="PS4离线金手指 数据更新于: "+localStorage.TrainerDate+"]";
 });
 if (window.applicationCache.status=='0'){trainersrc.src="trainerCache.html";}
 </script>
