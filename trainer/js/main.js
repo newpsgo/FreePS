@@ -235,7 +235,7 @@ function HandleTrainer(mods){
 var good = true;
     if (SelectedProcess == null || typeof ProcessMaps.state == 'function' || typeof ProcessInfo.state == 'function') {
 		if (sessionStorage.runningCUSA!=null){Message.innerHTML="<font color=#dc3545>金手指不可用!</font><br>不适用于当前运行中的游戏"}
-        else {Message.innerHTML="<font color=#dc3545>未激活！</font><br>是否已加载WebRTE插件? 是否先运行游戏?";}
+        else {Message.innerHTML="<font color=#dc3545>未激活！</font><br>是否已加载WebRTE插件? 是否已运行游戏?";}
         good = false;
     }
     if (mods.length !== undefined)
