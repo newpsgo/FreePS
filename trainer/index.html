@@ -23,18 +23,9 @@ rawFile.send(null);
 readTextFile("list.json", function(text){
 var data = JSON.parse(text);
 localStorage.TrainerDate=data.TrainersUpdatedOn;
-document.title="PS4离线金手指 数据更新于: "+localStorage.TrainerDate+"]";
+document.title="PS4离线金手指 数据更新于: "+localStorage.TrainerDate;
 });
 if (window.applicationCache.status=='0'){trainersrc.src="trainerCache.html";}
 </script>
 </body>
 </html>
-   	 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7VRDNYTJ1Y');
-</script>
