@@ -243,10 +243,10 @@ opacity:0.7;
 
     </style>
 <meta charset="utf-8">
-<title>9.00系统折腾V11</title>
+<title>9.00系统折腾V15</title>
 		<script>
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="开始安装离线菜单!!";};
-			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=("正在缓存，请勿操作"+Math.round(100*(a.loaded/a.total)))+"%";};
 			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="离线菜单安装完成!!";setTimeout(function(){document.getElementById("progress").innerHTML="请关闭网络，并重启浏览器!!"; }, 1500);};
 		</script>
 <script>
@@ -660,7 +660,7 @@ gtav.style.display = "none";
 <script src="webkit.js"></script>
 </head>
 <body style='background-color:#101010'>
-<h1 style=' font-size:40px;text-align:center; color:#CFB53B;margin-top:1%;'>9.00系统折腾V12 PSGO.eu.org</h1>
+<h1 style=' font-size:40px;text-align:center; color:#CFB53B;margin-top:1%;'>9.00折腾V15 - PSGO.eu.org</h1>
 
 <div id=all style="text-align:center;">
 
@@ -670,7 +670,7 @@ gtav.style.display = "none";
 <button class="btn"  id="button-Payload" onMouseOver="progress.innerHTML='Bin加载器，端口9021 制作:Sleirsgoevy'"; onmouseout="progress.innerHTML='光标指向按钮，查看功能概述'" type="button" onclick="Mloader()"   > Bin 加载器9021 </button>
 <button class="btn"  id="button-Payload" onMouseOver="progress.innerHTML='请先进行黄金Hen破解。Orbiso工具箱，实时显示温度等插件。BY: Legendary OSM。(汉化:上帝右手)'"; onmouseout="progress.innerHTML='光标指向按钮，查看功能概述'" type="button" onclick="load_Orbis()"   > Orbis 工具箱 </button>
 <br>
-<h1 id=progress style='font-size:25px;text-align:center; color:#CFB53B;'>先点击左上角GoldHEN，成功后再点击其它所需插件</h1><br>
+<h1 id=progress style='font-size:25px;text-align:center; color:#CFB53B;'>先点击GoldHEN，成功后再点击其它所需插件</h1><br>
 <button class="btn"  id="button-Payload" onMouseOver="progress.innerHTML='FTP服务端口1337，开启对PS4内置硬盘上的访问权限'"; onmouseout="progress.innerHTML='光标指向按钮，查看功能概述'" type="button" onclick="load_FTP()"   > FTP 服务 </button>
 <button class="btn"  id="button-Payload" onMouseOver="progress.innerHTML='将PS4内置游戏转移到USB存储器（外置存储器需EXfat格式）'"; onmouseout="progress.innerHTML='光标指向按钮，查看功能概述'" type="button" onclick="load_App2USB()"   > App2USB </button>
 <button class="btn"  id="button-Payload" onMouseOver="progress.innerHTML='在主题菜单的游戏选项卡中，加入TestKit测试机调试菜单- By notzecoxao'"; onmouseout="progress.innerHTML='光标指向按钮，查看功能概述'" type="button" onclick="load_ToDex()"   > ToDex </button>
