@@ -1,13 +1,19 @@
 @echo off
+
 echo CACHE MANIFEST > test0.txt
-echo # The Wolf Host 900n ( %date% )>> test0.txt
+echo #PS5.PSGO.eu.org %DATE%-%TIME% >> test0.txt
 echo. >> test0.txt
+echo CACHE: >> test0.txt
 
 set LOC=%~dp0
 
 dir /B /S /A:-D >> test0.txt
 
-findstr /v "media mod .bat .exe .mp4 .git .rar Cache.manifest test0.txt" test0.txt > test.txt
+echo. >> test0.txt
+echo NETWORK: >> test0.txt
+echo * >> test0.txt
+
+findstr /v "media .bat .exe .mp4 .git .py .zip .rar .manifest test0.txt" test0.txt > test.txt
 del test0.txt
 
 @echo off
