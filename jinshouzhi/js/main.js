@@ -453,7 +453,7 @@ var input = sessionStorage.runningCUSA.toLowerCase();
 observer.update();
 trainerYN = $('div.d-flex').length-2;tot1.innerHTML=trainerYN;
 if(trainerYN==0){
-	alert("Sorry, There Are Currently No Trainers Available For This Game");
+	alert("当前正在运行的游戏未找到匹配的金手指，游戏ID和游戏版本需要完全匹配");
 	document.getElementById('search-input').value = '';
 	SearchFromForm();}
 if(trainerYN!=0){sessionStorage.TrainerAvailable="yes";}

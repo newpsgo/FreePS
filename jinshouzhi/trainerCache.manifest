@@ -1,8 +1,7 @@
 CACHE MANIFEST 
-# Leeful Offline PS4 Trainer 
-# 27/03/2023-15:09:07.24 
+#PS5.PSGO.eu.org 2024/01/31 ÖÜÈý-14:03:51.79 
 
-
+CACHE: 
 index.html
 list.json
 main.html
@@ -1925,10 +1924,5 @@ js\jquery.min.js
 js\lazyload.min.js
 js\main.js
 
-NETWORK:
-*
-
-SETTINGS:
-prefer-online:
-
-# Date: 27/03/2023 15:09:10.24
+NETWORK: 
+* 
