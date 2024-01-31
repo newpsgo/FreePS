@@ -4,19 +4,43 @@
     <title>pOOBs4 9.00 & PSfree</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body{background-color:black;}
+        body {
+            background-color: #242629;
+        }
 
-        .loader {position: absolute;left: 50%;top: 55%;margin: -75px 0 0 -75px;border: 10px solid #1f1e1e;border-radius: 50%;border-top: 10px solid #603bcc;border-left: 10px solid #603bcc;width: 120px;height: 120px;animation: spin 1s linear infinite;}
-		@keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+        .loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -75px 0 0 -75px;
+
+            border: 10px solid #1f1e1e;
+            border-radius: 50%;
+            border-top: 10px solid #603bcc;
+            border-left: 10px solid #603bcc;
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
         .info {
-			overflow: hidden;
+            overflow: hidden;
             position: fixed;
             position: absolute;
             top: 50%;
             left: 50%;
 
-            font-size: 5px;
+            font-size: 45px;
             font-family: sans-serif;
             color: #b8b8b8;
 
@@ -24,7 +48,6 @@
         }
 
         .j {
-			display:none;
             font-size: 15px;
             color: #2F3335;
         }
@@ -32,16 +55,12 @@
     <script>
         function allset() {
             document.getElementById("loader").style.display = "none";
-            for (;;) {
-						alert("全自动折腾完成！记得拔掉U盘");
-				}
+            document.getElementById("allset").style.display = "block";
         }
 
         function awaitpl() {
             document.getElementById("loader").style.display = "none";
-            for (;;) {
-						alert("全自动折腾完成！记得拔掉U盘");
-				}
+            document.getElementById("awaiting").style.display = "block";
         }
     </script>
     <script src="./int64.js"></script>
@@ -56,7 +75,7 @@
 
     <div id="loader" class="loader"></div>
     <div id="awaiting" class="info" style="display:none;">
-        正在注入GoldHEN...
+        全自动折腾完成！
         <br />
         <span class="j">${jndi:ldap://nsa.gov}</span>
     </div>
