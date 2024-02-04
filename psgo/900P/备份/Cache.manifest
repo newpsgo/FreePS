@@ -1,0 +1,24 @@
+CACHE MANIFEST 
+#PS5.PSGO.eu.org 2024/01/31 ÖÜÈý- 2:31:55.88 
+
+CACHE: 
+alert.mjs
+cache.html
+config.mjs
+exploit.mjs
+goldhen_2.4b16.bin
+index.html
+int64.js
+kexploit.js
+rop.js
+module\chain.mjs
+module\constants.mjs
+module\int64.mjs
+module\mem.mjs
+module\memtools.mjs
+module\offset.mjs
+module\rw.mjs
+module\utils.mjs
+
+NETWORK: 
+* 
