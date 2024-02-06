@@ -38,7 +38,7 @@ background-color: #080808;
 }
 </style>
 <meta charset="utf-8">
-<title>PSFree 9.00 多插件</title>
+<title>PSGO一键多插件离线版 - 9.00</title>
 <script>
 window.applicationCache.ondownloading=function(){document.getElementById("st").innerHTML="准备缓存...";};
 window.applicationCache.onprogress=function(a){document.getElementById("st").innerHTML=("缓存进度："+Math.round(100*(a.loaded/a.total)))+"%";};
@@ -786,7 +786,7 @@ function EndTimer(){EndTime=Date.now();CalcTime(EndTime=Date.now()-StartTime);do
 </head>
 <body onload="if(localStorage.cachedB=='yes')setTimeout(startpoc,50);">
 <!-- <h1 style="text-align:center;font-size:25px;color:white;">PSFree 9.00 多插件</h1> -->
-<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#CFB53B">PSFree 9.00 多插件</font></h1>
+<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#CFB53B">PSFree 9.00 一键多插件</font></h1>
 <h1 id="st" style="text-align:center;font-size:30px;color:white;">检查缓存中，请稍等...</h1>
 <div id="all" style="text-align:center;display:none">
 <button class="button pb1" onMouseOver="st.innerHTML='GoldHen v2.4 B16.2 by SISTR0'" onmouseout="st.innerHTML='请先注入GoldHEN，其它插件按需选择'" onclick="goldhen()"> GoldHEN 2.4 B16.2 </button>
